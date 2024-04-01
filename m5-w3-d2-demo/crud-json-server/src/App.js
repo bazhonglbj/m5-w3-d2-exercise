@@ -22,6 +22,7 @@ class App extends React.Component {
           loading:false,
           alldata:result
         }))
+      .catch(console.log())
     }
 
     render(){
