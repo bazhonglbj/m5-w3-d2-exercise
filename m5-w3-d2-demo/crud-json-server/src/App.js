@@ -2,6 +2,7 @@ import React from "react";
 import Lists from "./Lists";
 import CreateList from "./CreateList";
 
+
 class App extends React.Component {
     constructor(props) {
       super(props);
@@ -16,7 +17,7 @@ class App extends React.Component {
     }
 
     getLists = () => {
-      fetch("http://localhost:5000/posts")
+      fetch("http://localhost:5000/")
       .then(res => res.json())
       .then(result =>
         this.setState({
@@ -138,7 +139,7 @@ class App extends React.Component {
             className="btn btn-primary"
             onClick={this.getLists}
             >
-              Get Lists
+              Get Book
             </button>
             <CreateList 
             singledata={this.state.singledata} 

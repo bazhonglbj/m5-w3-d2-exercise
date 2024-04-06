@@ -8,7 +8,7 @@ function CreateList(props) {
   return (
     <React.Fragment>
     <Button variant="primary" onClick={handleShow}>
-        Create New List
+       Add Book
     </Button>
 
     <Modal show={show} onHide={handleClose}>
@@ -18,7 +18,7 @@ function CreateList(props) {
         <Modal.Body>
         <input
             type="text"
-            placeholder="Title"
+            placeholder="Book Title"
             name="title"
             value={props.singledata.title}
             onChange={props.handleChange}
@@ -26,7 +26,7 @@ function CreateList(props) {
         />
         <input
             type="text"
-            placeholder="Author"
+            placeholder="Book Author"
             name="author"
             value={props.singledata.author}
             onChange={props.handleChange}

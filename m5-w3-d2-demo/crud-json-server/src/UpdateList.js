@@ -20,12 +20,12 @@ function UpdateList(props) {
       
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Update List</Modal.Title>
+            <Modal.Title>Edit List</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <input
               type="text"
-              placeholder="Title"
+              placeholder="Book Title"
               name="title"
               value={props.singledata.title}
               onChange={props.handleChange}
@@ -33,7 +33,7 @@ function UpdateList(props) {
             />
             <input
               type="text"
-              placeholder="Author"
+              placeholder="Book Author"
               name="author"
               value={props.singledata.author}
               onChange={props.handleChange}
